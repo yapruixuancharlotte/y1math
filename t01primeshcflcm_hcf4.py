@@ -1,12 +1,12 @@
 # Find the HCF of n positive integers.
 
-n = if x > y:
+if x > y:
         smaller = y
-    else:
+else:
         smaller = x
-    for i in range(1, smaller+1):
+
+for i in range(1, smaller+1):
         if((x % i == 0) and (y % i == 0)):
-            hcf = i
-            
-    return hcf
+                hcf = i
+print(hcf)
 
